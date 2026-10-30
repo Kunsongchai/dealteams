@@ -10,6 +10,7 @@ import {
   Idea,
 } from "../supabase";
 import { formatDate } from "./Workspace";
+import makerPhoto from "../assets/Screenshot_20261016_121012.jpg";
 
 interface TaskModalProps {
   modal: ModalConfig | null;
@@ -317,7 +318,7 @@ export default function TaskModal({
         <section className="about-maker">
           <span className="about-maker-suit" aria-hidden="true">
             <img
-              src="src/assets/Screenshot_20261016_121012.jpg"
+              src={makerPhoto}
               alt="Kunsongchai Chaiapijarean"
               className="maker-img"
             />

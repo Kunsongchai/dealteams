@@ -189,7 +189,7 @@ export default function App() {
   }, []);
 
   const loadOnlineRoom = useCallback(
-    async (roomId: string, silent = false) => {
+    async (roomId: string, silent = false, knownMemberId?: string) => {
       if (roomId === "demo") {
         setRoomData(saved.demoRoom || DEMO_ROOM);
         return;
@@ -197,7 +197,7 @@ export default function App() {
       if (!silent) setLoading(true);
       try {
         const data = await db.loadRoom(roomId);
-        let myMemberId = saved.memberMap[roomId];
+        let myMemberId = knownMemberId ?? saved.memberMap[roomId];
         const member = await db.ensureMember(roomId, myMemberId, saved.profile);
         myMemberId = member.id;
 
@@ -316,7 +316,10 @@ export default function App() {
       ],
     }));
     setModal(null);
-    openRoom(room.id, "overview");
+    // setSaved is asynchronous: pass the newly created ID directly so this
+    // first load reuses the creator instead of inserting another member.
+    setRoute({ roomId: room.id, view: "overview", group: "" });
+    await loadOnlineRoom(room.id, false, member.id);
     showToast(`สร้างห้อง “${room.name}” เรียบร้อยแล้ว ♣`);
   };
 

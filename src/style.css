@@ -348,12 +348,6 @@ button:disabled {
   max-width: 130px;
 }
 
-.home-bottom {
-  display: flex;
-  justify-content: center;
-  margin-top: 3px;
-}
-
 .resume-panel {
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -422,32 +416,6 @@ button:disabled {
   font-size: 10px;
   color: #a0b095;
   margin-top: 3px;
-}
-
-.how-steps {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  margin-top: 25px;
-}
-
-.how-step {
-  font-size: 11px;
-  color: #cad1c2;
-}
-
-.how-step span {
-  display: block;
-  font-size: 9px;
-  color: #8fa27f;
-  margin-bottom: 7px;
-}
-
-.how-step small {
-  display: block;
-  font-size: 9px;
-  color: #879381;
-  margin-top: 4px;
 }
 
 .work-layout {
@@ -735,14 +703,6 @@ button:disabled {
   color: #78856d;
 }
 
-.stack-arrow {
-  position: absolute;
-  right: 16px;
-  bottom: 39px;
-  font-size: 19px;
-  color: #829379;
-}
-
 .table-seal {
   position: absolute;
   top: 50%;
@@ -803,66 +763,6 @@ button:disabled {
   padding: 0;
 }
 
-.progress-copy {
-  font-size: 10px;
-  color: #a2b197;
-  margin-bottom: 9px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.progress-track {
-  height: 5px;
-  background: #414b3c;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.progress-fill {
-  height: 100%;
-  background: #c0d694;
-}
-
-.personal-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  text-align: left;
-  background: none;
-  color: #d6dfcd;
-  padding: 14px 0;
-  border-bottom: 1px solid #ffffff0b;
-}
-
-.mini-card {
-  width: 25px;
-  height: 34px;
-  background: #e9e9d7;
-  color: #46633a;
-  display: grid;
-  place-items: center;
-  border-radius: 4px;
-}
-
-.nudge {
-  background: #343c30;
-  border-radius: 10px;
-  padding: 16px;
-  margin-top: 16px;
-}
-
-.nudge h3 {
-  font-size: 12px;
-  color: #d4dfc7;
-}
-
-.nudge p {
-  font-size: 10px;
-  color: #99aa8c;
-  margin-top: 7px;
-}
-
 .team-row {
   display: flex;
   gap: 7px;
@@ -920,66 +820,6 @@ button:disabled {
   color: #31482d;
 }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 18px;
-}
-
-.work-card {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  background: #f4f1e7;
-  color: #344534;
-  border-radius: 11px;
-  padding: 20px;
-  min-height: 254px;
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
-}
-
-.work-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px #0003;
-}
-
-.work-card-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #7d8974;
-  font-size: 9px;
-  margin-bottom: 18px;
-}
-
-.work-suit {
-  font-size: 28px;
-  font-family: Georgia, serif;
-}
-
-.work-card h2 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 9px;
-}
-
-.work-card .description {
-  font-size: 11px;
-  color: #84907a;
-  margin-bottom: 16px;
-}
-
-.work-card-foot {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto;
-  padding-top: 14px;
-  border-top: 1px solid #dce0d1;
-}
-
 .owner-label {
   display: flex;
   align-items: center;
@@ -1021,18 +861,6 @@ button:disabled {
   margin-top: 12px;
 }
 
-.add-card {
-  border: 1px dashed #9bae7d55;
-  border-radius: 11px;
-  min-height: 254px;
-  background: #ffffff02;
-  color: #a3b78c;
-  display: grid;
-  place-content: center;
-  text-align: center;
-  gap: 9px;
-}
-
 .empty-state {
   padding: 55px 20px;
   text-align: center;
@@ -1040,33 +868,6 @@ button:disabled {
   border: 1px dashed #ffffff1a;
   border-radius: 12px;
   color: #9aae89;
-}
-
-.member-card {
-  align-items: center;
-  text-align: center;
-  padding-top: 28px;
-}
-
-.member-card .member-stats {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 22px;
-  border-top: 1px solid #dadecd;
-  padding-top: 16px;
-  font-size: 10px;
-}
-
-.idea-preview {
-  height: 110px;
-  width: 100%;
-  border-radius: 6px;
-  margin-bottom: 17px;
-  background: #e5e6d6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .modal-overlay {
@@ -1217,15 +1018,6 @@ button:disabled {
   margin: 20px 0;
 }
 
-.info-box {
-  padding: 14px 17px;
-  border: 1px solid #d7dcc7;
-  border-radius: 8px;
-  background: #e9ecdf;
-  font-size: 11px;
-  color: #7e8b6c;
-}
-
 .app-toast {
   position: fixed;
   bottom: 24px;
@@ -1261,22 +1053,68 @@ button:disabled {
   .side-divider {
     display: none;
   }
-  .dashboard-grid,
-  .home-bottom {
+  .dashboard-grid {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 650px) {
+  .home {
+    padding: 20px 16px 28px;
+  }
+  .welcome h1 {
+    font-size: clamp(25px, 7.5vw, 36px);
+    letter-spacing: -0.6px;
+    line-height: 1.5;
+  }
+  .welcome > p {
+    font-size: 12px;
+  }
+  .fan-wrap {
+    margin-top: 18px;
+    padding: 10px 0 24px;
+  }
   .home-fan {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 14px;
+    min-height: 0;
+    padding: 0;
   }
   .entry-card {
     width: 100%;
+    min-width: 0;
     height: 220px;
+    margin: 0;
+    padding: 36px 16px;
     --lift: 0 !important;
+    --angle: 0deg !important;
+  }
+  .entry-card h2 {
+    font-size: clamp(20px, 5.8vw, 27px);
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+  }
+  .entry-card > p {
+    font-size: 10px;
+    letter-spacing: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+  .entry-card .card-corner {
+    font-size: 22px;
+    top: 12px;
+    left: 13px;
+  }
+  .entry-card .card-corner.bottom {
+    top: auto;
+    left: auto;
+    bottom: 12px;
+    right: 13px;
+  }
+  .entry-card:hover,
+  .entry-card:focus-visible {
+    transform: translateY(-4px);
   }
   .stat-strip {
     grid-template-columns: 1fr 1fr;
@@ -1310,11 +1148,6 @@ button:disabled {
   font-size: 32px;
   transform: rotate(-8deg);
   box-shadow: 3px 4px 0 #c5ceb8;
-}
-.about-label {
-  font-size: 8px;
-  letter-spacing: 1.6px;
-  color: #69785d;
 }
 .about-maker h3 {
   font-size: 19px;

@@ -209,12 +209,6 @@
     sans-serif;
   letter-spacing: 2px;
 }
-.back-prompt {
-  position: absolute;
-  bottom: 40px;
-  font-size: 10px;
-  letter-spacing: 0.4px;
-}
 .playing-index {
   position: absolute;
   top: 17px;
@@ -775,9 +769,6 @@
     font-size: 6px;
     letter-spacing: 1px;
   }
-  .back-prompt {
-    font-size: 8px;
-  }
 }
 @media (max-width: 380px) {
   .collection-table,
@@ -874,9 +865,6 @@
   .app-footer {
     padding: 22px 18px;
     gap: 12px;
-  }
-  .hand-hint-desktop {
-    display: none;
   }
   .hand-hint-mobile {
     display: inline;
